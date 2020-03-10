@@ -1,10 +1,8 @@
 float xpos, ypos; // Position de départ
 
-float xvit = 2.8; // Vitesse de l'image
-float yvit = 2.2; // Vitesse de l'image
+float vit = 1.5; // Vitesse de l'image
 
-int xdir = 1; // Direction gauche/droite
-int ydir = 1; // Direction haut/bas
+int dir = 1; // Direction
 
 PImage img;
 
@@ -19,6 +17,6 @@ void setup() {
 void draw() {
   background(0);
   image(img, xpos, ypos);
-  xpos = xpos + (xvit * xdir);
-  ypos = ypos + (yvit * ydir);
+  xpos = xpos + (vit * dir);
+  ypos = ypos + (vit * dir);
 }
